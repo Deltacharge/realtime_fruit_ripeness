@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fruit Ripeness Predictor</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-container">
+    <div class="card">
+
+        <h1>🍎 Fruit Ripeness Predictor</h1>
+        <p class="subtitle">
+            Upload an image or use your camera to check fruit freshness
+        </p>
+
+        <!-- Upload -->
+        <div class="section">
+            <label class="label">Upload Image</label>
+            <input type="file" id="imageInput" accept="image/*">
+        </div>
+
+        <!-- Camera -->
+        <div class="camera-box">
+            <video id="video" autoplay></video>
+            <button class="secondary-btn" onclick="capture()">📸 Capture & Predict</button>
+        </div>
+
+        <!-- Predict -->
+        <button class="primary-btn" onclick="predict()">🔍 Predict</button>
+
+        <!-- Preview -->
+        <div id="preview" class="preview"></div>
+
+        <!-- Result -->
+        <div id="result" class="result-box hidden"></div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
