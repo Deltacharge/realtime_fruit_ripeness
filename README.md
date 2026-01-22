@@ -63,6 +63,20 @@ Frontend (HTML, CSS, JavaScript)
 5. Frontend displays the result in real time
 
 ---
+## Dataset Structure (IMPORTANT)
+data/
+├── train/
+│ ├── fresh/
+│ ├── okay/
+│ └── avoid/
+│
+└── test/
+├── fresh/
+├── okay/
+└── avoid/
+
+Then run the ./scripts/create_val_set.py to create "val" directory automatically.
+Then Further train the model
 
 ## Technologies Used
 - Python
